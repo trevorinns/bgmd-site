@@ -1,491 +1,62 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BankGroup Memory Distribution</title>
-  <meta name="description" content="Bin-graded DRAM ICs & modules with lot-level data. Exact bins. Fast fulfilment.">
+  <title>BGMD — DDR5 modules in volume</title>
+  <meta name="description" content="BankGroup Memory Distribution — We distribute DDR5 modules in volume.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --ink:#111827; --slate:#334155; --bg:#ffffff; --muted:#6b7280; }
+    html,body{height:100%;}
+    body{ margin:0; font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--ink); background:var(--bg); }
+    .wrap{min-height:100%; display:flex; align-items:center; justify-content:center; padding:32px;}
+    .card{ width:100%; max-width:720px; border:1px solid #e5e7eb; border-radius:20px; padding:28px 28px 22px; box-shadow:0 4px 16px rgba(0,0,0,.04); }
+    .brand{display:flex; gap:12px; align-items:center; margin-bottom:8px;}
+    .logo{display:grid; grid-template-columns:repeat(4,10px); grid-template-rows:repeat(2,10px); gap:2px;}
+    .logo div{width:10px;height:10px;background:var(--ink); border-radius:2px;}
+    h1{font-size:22px; margin:0;}
+    .tag{color:var(--muted); font-size:13px; margin-top:2px;}
+    .big{font-size:28px; font-weight:700; margin:18px 0 6px 0;}
+    .sub{color:var(--slate); font-size:16px; margin:0 0 22px 0;}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:8px;}
+    .btn{display:inline-block; padding:10px 14px; border-radius:12px; text-decoration:none; font-weight:600;}
+    .btn.primary{background:var(--ink); color:#fff;}
+    .btn.ghost{border:1px solid #e5e7eb; color:var(--ink);}
+    .contact{margin-top:8px; color:var(--slate); font-size:14px;}
+    .contact a{color:inherit;}
+    footer{margin-top:20px; padding-top:10px; border-top:1px solid #e5e7eb; color:#6b7280; font-size:12px;}
+  </style>
 </head>
-<body class="antialiased bg-slate-50 text-slate-900">
-  <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
-        <a href="#home" class="flex items-center gap-3 group">
-          <div class="relative h-10 w-10" aria-hidden="true">
-            <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-full w-full">
-              <div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-            </div>
-            <span class="sr-only">BG Logo</span>
-          </div>
-          <div class="leading-tight">
-            <div class="font-semibold tracking-tight group-hover:opacity-90">BankGroup Memory Distribution</div>
-            <div class="text-xs text-slate-500">BG Memory • UK–EU wholesale</div>
-          </div>
-        </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#products" class="hover:text-slate-700">Products</a>
-          <a href="#services" class="hover:text-slate-700">Services</a>
-          <a href="#logistics" class="hover:text-slate-700">Logistics</a>
-          <a href="#quality" class="hover:text-slate-700">Quality</a>
-          <a href="#about" class="hover:text-slate-700">About</a>
-          <a href="#contact" class="hover:text-slate-700">Contact</a>
-        </nav>
-        <div class="hidden md:flex items-center gap-3">
-          <a href="mailto:enquiries@bgmd.tech?subject=RFQ%20from%20bgmd.tech" class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-3 py-2 text-sm font-medium hover:bg-white">Email enquiries</a>
-          <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-slate-800">Request a quote</a>
+<body>
+  <div class="wrap">
+    <main class="card" role="main">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
         </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-slate-50"></div>
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">
-            <span class="inline-block h-1.5 w-1.5 rounded-full bg-slate-400"></span>
-            Bin‑graded DRAM for UK & EU wholesalers
-          </span>
-          <h1 class="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-slate-900">Exact bins. Fast fulfilment.</h1>
-          <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-prose">
-            We supply bin‑graded DDR4/DDR5 ICs and modules with lot‑level data, SPD‑verified profiles, and reliable lead times via London Gateway and Rotterdam.
-          </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-5 py-3 text-sm font-semibold shadow hover:bg-slate-800">Start an RFQ</a>
-            <a href="#products" class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium hover:bg-slate-50">View products</a>
-          </div>
-          <dl class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-6">
-            <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-              <div class="text-xs text-slate-500">Lead time</div>
-              <div class="text-lg font-semibold text-slate-900">7–21 days</div>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-              <div class="text-xs text-slate-500">Bins</div>
-              <div class="text-lg font-semibold text-slate-900">Defined & repeatable</div>
-            </div>
-            <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3">
-              <div class="text-xs text-slate-500">Coverage</div>
-              <div class="text-lg font-semibold text-slate-900">UK • EU</div>
-            </div>
-          </dl>
-        </div>
-        <div class="relative">
-          <div class="absolute -inset-6 -z-10 bg-gradient-to-tr from-slate-200/60 to-white rounded-3xl"></div>
-          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <div class="grid grid-cols-6 gap-3">
-              <!-- Decorative chip grid -->
-              
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-01</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 1</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-02</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 2</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-03</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 3</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-04</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 1</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-05</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 2</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-06</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 3</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-07</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 1</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-08</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 2</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-09</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 3</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-10</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 1</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-11</div>
-      <div class="text-[11px] text-slate-500">DDR4 • Bin 2</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rounded-2xl border border-slate-200 bg-white p-4">
-  <div class="flex items-center gap-2">
-    <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-6 w-6">
-      <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-    </div>
-    <div>
-      <div class="text-xs font-semibold text-slate-900">BG-12</div>
-      <div class="text-[11px] text-slate-500">DDR5 • Bin 3</div>
-    </div>
-  </div>
-</div>
-
-            </div>
-          </div>
-          <p class="mt-3 text-xs text-slate-500 text-center">Visual cue: bank‑grouped arrays (DDR4/DDR5) and module SKUs</p>
+          <h1>BankGroup Memory Distribution</h1>
+          <div class="tag">BGMD • UK/EU wholesale</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Products -->
-  <section id="products" class="py-16 sm:py-24 bg-white border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Products</h2>
-      <p class="mt-2 text-slate-600 max-w-prose">Bin‑graded DRAM ICs and memory modules for OEMs, integrators, and brokers. All shipments include lot‑level test data and SPD verification for modules.</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="flex items-start gap-3">
-    <div class="mt-1">
-      <div class="relative h-7 w-7" aria-hidden="true">
-        <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-full w-full">
-          <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-        </div>
+      <div class="big">We distribute DDR5 modules in volume.</div>
+      <p class="sub">Bulk supply only. UK & EU delivery with short lead times.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:enquiries@bgmd.tech?subject=DDR5%20modules%20—%20RFQ">Request a quote</a>
+        <a class="btn ghost" href="mailto:enquiries@bgmd.tech">enquiries@bgmd.tech</a>
       </div>
-    </div>
-    <div>
-      <div class="text-base font-semibold text-slate-900">DRAM ICs</div>
-      <div class="text-sm text-slate-500">DDR4 / DDR5 (x4, x8)</div>
-    </div>
+
+      <div class="contact">
+        <div>Phone: <a href="tel:+447521453630">+44 7521 453630</a></div>
+        <div>London Gateway • Rotterdam</div>
+      </div>
+
+      <footer>© 2025 BG Memory Distribution Ltd. All rights reserved.</footer>
+    </main>
   </div>
-  <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-    <li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Speed bins to spec</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Voltage/temperature corners</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Lot traceability</li>
-  </ul>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="flex items-start gap-3">
-    <div class="mt-1">
-      <div class="relative h-7 w-7" aria-hidden="true">
-        <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-full w-full">
-          <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="text-base font-semibold text-slate-900">UDIMMs & SODIMMs</div>
-      <div class="text-sm text-slate-500">DDR4/DDR5</div>
-    </div>
-  </div>
-  <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-    <li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Up to 64GB</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Client & embedded</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> JEDEC-correct SPD</li>
-  </ul>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="flex items-start gap-3">
-    <div class="mt-1">
-      <div class="relative h-7 w-7" aria-hidden="true">
-        <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-full w-full">
-          <div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div><div class="rounded-sm bg-slate-900"></div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="text-base font-semibold text-slate-900">Industrial ECC</div>
-      <div class="text-sm text-slate-500">ECC UDIMM / SODIMM</div>
-    </div>
-  </div>
-  <ul class="mt-4 grid gap-2 text-sm text-slate-700">
-    <li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Longevity options</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> SPD verification</li>
-<li class="flex items-start gap-2"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Thermal margining</li>
-  </ul>
-</div>
-      </div>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">JEDEC‑aligned bins</span>
-        <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">SPD‑verified</span>
-        <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">Lot‑level COA</span>
-        <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">RMA policy</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-16 sm:py-24 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Services</h2>
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
-        
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">Bin‑grading & test</div>
-  <p class="mt-2 text-sm text-slate-600">Electrical screening for speed/timing, voltage, and temperature corners. Repeatable bins with pass/fail stats.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">SPD programming</div>
-  <p class="mt-2 text-sm text-slate-600">Module SPD configuration and verification against requested profiles (JEDEC/XMP).</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">Data & traceability</div>
-  <p class="mt-2 text-sm text-slate-600">Lot IDs, test limits, summaries, and COAs supplied per shipment.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">Sourcing & continuity</div>
-  <p class="mt-2 text-sm text-slate-600">Aligned upstream capacity and repeatable bins over multiple POs.</p>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Logistics -->
-  <section id="logistics" class="py-16 sm:py-24 bg-white border-y border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Logistics</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">London Gateway</div>
-  <p class="mt-2 text-sm text-slate-600">Port‑side stockholding and UK distribution.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">Rotterdam</div>
-  <p class="mt-2 text-sm text-slate-600">EU buffer and onward distribution.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-base font-semibold text-slate-900">Fulfilment</div>
-  <p class="mt-2 text-sm text-slate-600">Duties, paperwork, and carrier management handled end‑to‑end.</p>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quality -->
-  <section id="quality" class="py-16 sm:py-24 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Quality</h2>
-      <div class="mt-8 grid md:grid-cols-4 gap-6">
-        
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-xs text-slate-500">Step 01</div>
-  <div class="mt-1 text-base font-semibold text-slate-900">Incoming AQL</div>
-  <p class="mt-2 text-sm text-slate-600">Sampling to defined acceptance levels.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-xs text-slate-500">Step 02</div>
-  <div class="mt-1 text-base font-semibold text-slate-900">ATE & stress</div>
-  <p class="mt-2 text-sm text-slate-600">Speed/timing verification at temperature corners.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-xs text-slate-500">Step 03</div>
-  <div class="mt-1 text-base font-semibold text-slate-900">Bin & label</div>
-  <p class="mt-2 text-sm text-slate-600">Segregation by spec with lot IDs and summaries.</p>
-</div>
-
-<div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-  <div class="text-xs text-slate-500">Step 04</div>
-  <div class="mt-1 text-base font-semibold text-slate-900">Ship & support</div>
-  <p class="mt-2 text-sm text-slate-600">COAs supplied; responsive post‑shipment support.</p>
-</div>
-      </div>
-      <p class="mt-6 text-xs text-slate-500">Note: We describe capabilities and process; formal certifications referenced only when applicable to the specific shipment.</p>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-16 sm:py-24 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">About</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-8 items-start">
-        <p class="text-slate-600 leading-relaxed">
-          BankGroup Memory Distribution (BG Memory) is a UK/EU wholesaler of DRAM ICs and DIMMs. We focus on bin‑graded parts, verified SPD profiles, and consistent supply from aligned factories—backed by logistics at London Gateway and Rotterdam.
-        </p>
-        <ul class="grid gap-3 text-slate-700">
-          <li class="flex items-start gap-3"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Repeatable, defined bins</li>
-          <li class="flex items-start gap-3"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Lot‑level data and COAs</li>
-          <li class="flex items-start gap-3"><svg class="h-5 w-5 mt-0.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Port‑side fulfilment (UK & EU)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 sm:py-24 bg-slate-900 text-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-10 items-start">
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Request a quote</h2>
-          <p class="mt-2 text-slate-300 max-w-prose">Send us your target spec (speed/timing/voltage, type, quantities, delivery window). We'll confirm available bins and lead time.</p>
-          <div class="mt-6 grid gap-3 text-sm">
-            <a href="mailto:enquiries@bgmd.tech?subject=RFQ%20from%20bgmd.tech" class="inline-flex items-center gap-2 hover:opacity-90">
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M22 6l-10 7L2 6"/></svg>
-              enquiries@bgmd.tech
-            </a>
-            <div class="inline-flex items-center gap-2">
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.31 1.76.57 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.48-1.14a2 2 0 0 1 2.11-.45c.84.26 1.71.45 2.6.57A2 2 0 0 1 22 16.92z"/></svg>
-              +44 7521 453630
-            </div>
-            <div class="inline-flex items-center gap-2">
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-10a8 8 0 1 0-16 0c0 5.5 8 10 8 10z"/><circle cx="12" cy="12" r="3"/></svg>
-              London Gateway • Rotterdam
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <footer class="py-10 bg-white border-t border-slate-200 text-sm">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-      <div class="flex items-center gap-3">
-        <div class="relative h-7 w-7" aria-hidden="true">
-          <div class="grid grid-cols-4 grid-rows-2 gap-0.5 h-full w-full">
-            <div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-<div class="rounded-sm bg-slate-900"></div>
-          </div>
-        </div>
-        <span class="text-slate-600">© 2025 BG Memory Distribution Ltd. All rights reserved.</span>
-      </div>
-      <div class="flex flex-wrap gap-4 text-slate-600">
-        <a href="#about" class="hover:text-slate-900">About</a>
-        <a href="#quality" class="hover:text-slate-900">Quality</a>
-        <a href="#logistics" class="hover:text-slate-900">Logistics</a>
-        <a href="#contact" class="hover:text-slate-900">Contact</a>
-      </div>
-    </div>
-  </footer>
-
 </body>
 </html>
